@@ -209,3 +209,5 @@ fallback-license.json
 
 .orbital/
 /auth.bak.conf
+
+locals.tfvars
