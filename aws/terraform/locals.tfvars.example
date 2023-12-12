@@ -3,3 +3,4 @@ orbital_persist_results = true
 orbital_persist_remote_call_responses = false
 
 domain_name = "orbitalhq.test"
+orbital_workspace_git_url = "https://gitlab.com/vyne/test-workspace.git"

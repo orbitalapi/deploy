@@ -77,6 +77,24 @@ variable "database_password" {
    description = "The RDS Postgres password."
 }
 
+variable "orbital_workspace_git_url" {
+   type = string
+   description = "The git url (including a PAT if required) for reading a workspace config from git"
+}
+
+variable "orbital_workspace_git_branch" {
+   type = string
+   description = "The name of the git branch to read the workspace.conf file from"
+   default = "main"
+}
+
+variable "orbital_workspace_git_path" {
+   type = string
+   description = "The path within the git repository to the workspace.conf file"
+   default = "workspace.conf"
+}
+
+
 variable "orbital_version" {
    type = string
    description = "The version / tag of Orbital"

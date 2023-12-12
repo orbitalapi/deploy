@@ -64,8 +64,11 @@ module "orbital" {
   database_password                       = aws_db_instance.orbital-db.password
   database_port                           = aws_db_instance.orbital-db.port
   orbital_version                         = var.orbital_version
+  orbital_workspace_git_branch            = var.orbital_workspace_git_branch
+  orbital_workspace_git_url               = var.orbital_workspace_git_url
+  orbital_workspace_git_path              = var.orbital_workspace_git_path
 
-  depends_on = [
+  depends_on                              = [
     aws_internet_gateway.main
   ]
 }

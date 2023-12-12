@@ -52,3 +52,21 @@ variable "orbital_persist_remote_call_responses" {
    description = "Configures if Orbital persists results of remote calls"
    default = false
 }
+
+variable "orbital_workspace_git_url" {
+   type = string
+   description = "The git url (including a PAT if required) for reading a workspace config from git"
+   default = ""
+}
+
+variable "orbital_workspace_git_branch" {
+   type = string
+   description = "The name of the git branch to read the workspace.conf file from"
+   default = "main"
+}
+
+variable "orbital_workspace_git_path" {
+   type = string
+   description = "The path within the git repository to the workspace.conf file"
+   default = "workspace.conf"
+}
